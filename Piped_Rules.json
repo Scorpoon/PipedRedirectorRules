@@ -1,0 +1,60 @@
+{
+    "createdBy": "Redirector v3.5.3",
+    "createdAt": "2024-03-31T19:46:46.359Z",
+    "redirects": [
+        {
+            "description": "http(s)://youtube.com/* to piped instance redirect",
+            "exampleUrl": "http*://*.youtube.com/*",
+            "exampleResult": "http*://INSTANCE_HOSTNAME/*",
+            "error": null,
+            "includePattern": "http*://*.youtube.com/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "http$1://INSTANCE_HOSTNAME/$3",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame"
+            ]
+        },
+        {
+            "description": "http(s)://youtube-nocookie/* to piped instance redirect",
+            "exampleUrl": "http*://*.youtube-nocookie.com/*",
+            "exampleResult": "http*://INSTANCE_HOSTNAME/*",
+            "error": null,
+            "includePattern": "http*://*.youtube-nocookie.com/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "http$1://INSTANCE_HOSTNAME/$3",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame"
+            ]
+        },
+        {
+            "description": "http(s)://youtu.be/* to piped instance redirect",
+            "exampleUrl": "http*://youtu.be/*",
+            "exampleResult": "http*://INSTANCE_HOSTNAME/watch?v=*",
+            "error": null,
+            "includePattern": "http*://youtu.be/*",
+            "excludePattern": "",
+            "patternDesc": "",
+            "redirectUrl": "http$1://INSTANCE_HOSTNAME/watch?v=$2",
+            "patternType": "W",
+            "processMatches": "noProcessing",
+            "disabled": false,
+            "grouped": false,
+            "appliesTo": [
+                "main_frame",
+                "sub_frame"
+            ]
+        }
+    ]
+}
